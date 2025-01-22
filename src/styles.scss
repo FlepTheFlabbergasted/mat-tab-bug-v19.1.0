@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #1b1b1c;
+  color: #e7e7e7
+}
+
+p {
+  max-width: 80ch;
+}

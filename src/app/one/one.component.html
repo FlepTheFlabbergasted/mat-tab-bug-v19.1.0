@@ -1,0 +1,19 @@
+<div class="component-container">
+  <h1>Component One</h1>
+
+  <mat-tab-group dynamicHeight tabindex="1">
+    <mat-tab label="Tab 1">
+      <ng-container *ngTemplateOutlet="text"></ng-container>
+    </mat-tab>
+    <mat-tab label="Tab 2">
+      <ng-container *ngTemplateOutlet="text"></ng-container>
+    </mat-tab>
+  </mat-tab-group>
+
+  <button mat-stroked-button [routerLink]="['/two']">Go to two</button>
+
+  <ng-template #text>
+    <p>Click the button below to route to /two with a crossfade animation. The animation is slowed down so you can see what happens.</p>
+    <p>This tab content will dissapear immediately when the animation starts, which results in an undesirable jump on the page.</p>
+  </ng-template>
+</div>
